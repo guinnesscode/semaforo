@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { allCategories } from 'constants/CategoryNames';
+import { allCategories } from 'constants/categoryNames';
 
 const CategoryPicker = function () {
 	return (

@@ -1,13 +1,22 @@
 import React from 'react';
+import { Colors } from 'constants/categoryNames';
+import { getCategoryWords } from 'constants/categoryDetails';
 
 
 const Light = function () {
+	const colorWords = getCategoryWords(Colors);
 	return (
 		<div className="text-center row">
 			<div className="small-4 columns">
 				<div className="card">
 					<span className="badge alert">red light</span>
-					<div className="card-section">section 1</div>
+					<div className="card-section">
+						<ul className="text-justify">
+							{ colorWords.map((color, i) =>
+								<li key={i}>{color}</li>
+							)}
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div className="small-4 columns">
