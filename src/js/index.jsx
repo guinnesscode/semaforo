@@ -4,12 +4,12 @@ import { Router, Route, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
 
 import store from 'store';
-import MainContainer from 'containers/MainContainer';
+import Root from 'components/Root';
 
 ReactDOM.render(
     <Provider store={store}>
         <Router history={browserHistory}>
-            <Route path="/" component={MainContainer}></Route>
+            <Route path="/" component={Root}></Route>
         </Router>
     </Provider>,
     document.getElementById('app-container')

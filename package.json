@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server",
     "dev": "webpack -d --watch",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "eslint": "eslint --quiet --fix --format=compact"
   },
   "author": "allison fitzgerald",
   "license": "ISC",
@@ -30,7 +31,13 @@
     "webpack-dev-server": "^1.16.3"
   },
   "devDependencies": {
-    "eslint": "^3.15.0",
-    "eslint-plugin-react": "^6.9.0"
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.17.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-friendly-formatter": "^2.0.7",
+    "eslint-loader": "^1.6.3",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0"
   }
 }

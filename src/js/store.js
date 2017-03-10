@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware } from 'redux';
 import thunkMiddleware from 'redux-thunk';
+import rootReducer from 'reducers/SemaforoReducers';
 
-/*
 const buildStore = () => createStore(
     rootReducer,
     {},
@@ -9,6 +9,5 @@ const buildStore = () => createStore(
 );
 
 const store = buildStore();
-*/
-const store = createStore(state => state);
+
 export default store;

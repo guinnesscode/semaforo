@@ -3,7 +3,7 @@ import { Colors } from 'constants/categoryNames';
 import { getCategoryWords } from 'constants/categoryDetails';
 
 
-const Light = function () {
+const WordLight = function () {
 	const colorWords = getCategoryWords(Colors);
 	return (
 		<div className="text-center row">
@@ -35,4 +35,4 @@ const Light = function () {
 	);
 };
 
-export { Light as default };
+export { WordLight as default };
