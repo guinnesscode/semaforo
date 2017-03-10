@@ -50,7 +50,7 @@ function categorizedWords(
         ...state.slice(action.itemKey + 1)
       ];
     case ActionTypes.REMOVE_WORD:
-      state[action.currentKey].splice(state[action.currentKey].indexOf(action.word, 1))
+      state[action.currentKey].splice(state[action.currentKey].indexOf(action.word, 1), 1)
       return [
         ...state.slice(0, action.currentKey),
         state[action.currentKey],

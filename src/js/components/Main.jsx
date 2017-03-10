@@ -2,9 +2,9 @@ import React from 'react';
 
 import CategoryPicker from 'components/CategoryPicker';
 import Header from 'components/Header';
-import WordLight from 'components/WordLight';
 import { QUESTIONS, WORDS } from 'constants/navItems';
 import CategoryQuestionsContainer from 'containers/CategoryQuestionsContainer';
+import SortedWordsContainer from 'containers/SortedWordsContainer';
 import ItemMenuContainer from 'containers/ItemMenuContainer';
 
 const Main = function ({
@@ -16,7 +16,7 @@ const Main = function ({
         	<CategoryPicker />
         	<ItemMenuContainer />
         	{ selectedNavItem === QUESTIONS && <CategoryQuestionsContainer /> }
-        	{ selectedNavItem == WORDS && <WordLight /> }
+        	{ selectedNavItem == WORDS && <SortedWordsContainer /> }
         </div>
     );
 };
