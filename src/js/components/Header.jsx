@@ -3,7 +3,7 @@ import React from 'react';
 
 const Header = function () {
 	return (
-		<div className="text-center">
+		<div className="text-center margin-tb--large">
 			<h1>semáforo</h1>
 		</div>
 	);

@@ -1,0 +1,65 @@
+.margin-tb--large {
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+.margin-tb--medium {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.margin-tb--small {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.margin-tb--v-small {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.margin-b--medium {
+	margin-bottom: 16px;
+}
+
+.light {
+	width: 140px;
+	height: 140px;
+	border-radius: 70px;
+}
+
+.light--red {
+	background-color: #cc4b37;
+}
+
+.light--red:hover {
+	cursor: pointer;
+	background-color: #8e3426;
+}
+
+.light--yellow {
+	background-color: #ffae00;
+}
+
+.light--yellow:hover {
+	cursor: pointer;
+	background-color: #b27900;
+}
+
+.light--green {
+	background-color: #3adb76;
+}
+
+.light--green:hover {
+	cursor: pointer;
+	background-color: #289952;
+}
+
+.center-margin {
+	margin: 0 auto;
+}
+
+.active-check {
+	margin-left: 69px;
+	padding-top: 54px;
+}

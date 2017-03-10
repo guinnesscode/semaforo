@@ -14,9 +14,7 @@ class ItemMenu extends React.PureComponent {
 
 		return (
 			<li className={itemClass}>
-				<a
-					onClick={() => this.props.setActiveItem(itemName)}
-				>
+				<a onClick={() => this.props.setActiveItem(itemName)}>
 					{itemName}
 				</a>
 			</li>
@@ -25,11 +23,13 @@ class ItemMenu extends React.PureComponent {
 
 	render () {
 		return (
-			<div className="large-offset-3 columns menu-centered">
-				<ul className="menu">
-					{this.renderItem(QUESTIONS)}
-					{this.renderItem(WORDS)}
-				</ul>
+			<div className="row">
+				<div className="columns margin-b--medium">
+					<ul className="menu align-center">
+						{this.renderItem(QUESTIONS)}
+						{this.renderItem(WORDS)}
+					</ul>
+				</div>
 			</div>
 		)
 	}

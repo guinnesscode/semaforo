@@ -6,3 +6,19 @@ export function setActiveItem(selectedItemName) {
     selectedItemName,
   };
 }
+
+export function moveWord(word, itemKey) {
+	return {
+		type: ActionTypes.MOVE_WORD,
+		word,
+		itemKey,
+	};
+}
+
+export function removeWord(word, currentKey) {
+	return {
+		type: ActionTypes.REMOVE_WORD,
+		word,
+		currentKey,
+	};
+}
