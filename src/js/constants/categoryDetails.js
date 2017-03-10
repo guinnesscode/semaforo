@@ -1,6 +1,6 @@
 import { Colors, Food, Animals } from './categoryNames';
 
-export const categoryToWords = {
+const categoryToWords = {
   Colors: [
     'rojo',
     'anaranjado',
